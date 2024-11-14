@@ -10,7 +10,7 @@
 ## Integrantes
 - Santiago Barrera Vergara
 - Carlos Martinez Morales
-- Mayra Alejandra Marin López
+- [Mayra Alejandra Marin López](https://github.com/malejamarin)
 - Larry Alejandro Nuñez Gomez
 - [Henry Alejandro Cáceres Téllez](https://github.com/tecnohalecatez)
 
