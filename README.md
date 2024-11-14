@@ -9,4 +9,4 @@
 - Henry Alejandro Cáceres Téllez
 
 
-
+![Logo SVG](file:///Users/halecatez/Downloads/logo-tic-talentotech.svg)
