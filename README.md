@@ -1,12 +1,22 @@
 
 # Transición Energética Justa
 
+<br>
+
+![Logo SVG](resources/images/logo-tic-talentotech.svg)
+
+<br>
+
 ## Integrantes
 - Santiago Barrera Vergara
 - Carlos Martinez Morales
-- Mayra Alejandra Marin López
+- [Mayra Alejandra Marin López](https://github.com/malejamarin)
 - Larry Alejandro Nuñez Gomez
-- Henry Alejandro Cáceres Téllez
+- [Henry Alejandro Cáceres Téllez](https://github.com/tecnohalecatez)
 
+<br>
 
-![Logo SVG](file:///Users/halecatez/Downloads/logo-tic-talentotech.svg)
+#### Grupo 7
+- Programación Integrador - Intermedio
+- Colombia
+- 2024
