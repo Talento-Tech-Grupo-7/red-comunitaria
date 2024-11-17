@@ -45,7 +45,7 @@ La aplicación, a través de tecnologías modernas y una arquitectura orientada 
 
 <br>
 
-##### Objetivo General
+**Objetivo General**
 Desarrollar una aplicación web integral que permita la visualización y gestión de datos sobre la producción y el consumo de energía renovable a nivel global. La plataforma ayudará a los usuarios a comprender tendencias energéticas y tomar decisiones informadas que promuevan la transición hacia un sistema energético más sostenible.
 
 <br>
@@ -70,3 +70,13 @@ Desarrollar una aplicación web integral que permita la visualización y gestió
 #### Nivel 3: Avanzados
 - **Visualización y experiencia del usuario:** Presentación de los resultados en formato tabular e interactivo, con gráficos que representen las consultas SQL de manera visual y comprensible.
 - **Interactividad y responsividad:** Implementación de gráficos interactivos, tablas responsivas, búsqueda en tiempo real, validación de formularios y actualización dinámica de contenido para mejorar la experiencia del usuario.
+
+<br>
+<br>
+<br>
+
+## 3. Alcances
+Este proyecto abarca:
+- **Desarrollo de una aplicación web:** Creación de una interfaz amigable y moderna para la visualización y gestión de datos energéticos.
+- **Visualización de datos energéticos históricos y en tiempo real:** Integración de gráficos interactivos y tablas que muestren tendencias y estadísticas relevantes.
+- **Implementación en producción:** La aplicación estará disponible en un entorno de producción, accesible para usuarios finales, cumpliendo con estándares de seguridad y diseño responsivo.
