@@ -27,6 +27,8 @@
 1. Introducción
 2. Requerimientos
 3. Alcances
+4. Desarrollo
+5. Resultados esperados
 
 <br>
 <br>
@@ -47,7 +49,14 @@ La aplicación, a través de tecnologías modernas y una arquitectura orientada 
 
 **Objetivo General**
 
-Desarrollar una aplicación web integral que permita la visualización y gestión de datos sobre la producción y el consumo de energía renovable a nivel global. La plataforma ayudará a los usuarios a comprender tendencias energéticas y tomar decisiones informadas que promuevan la transición hacia un sistema energético más sostenible.
+Desarrollar una aplicación web integral que permita la visualización y gestión de datos sobre la producción y el consumo de energía renovable a nivel Colombia. La plataforma ayudará a los usuarios a comprender tendencias energéticas y tomar decisiones informadas que promuevan la transición hacia un sistema energético más sostenible.
+
+**Objetivos específicos**
+
+- Diseñar y desarrollar una base de datos relacional que almacene datos históricos y actuales de producción y consumo de energía renovable.
+- Implementar una interfaz web que permita a los usuarios visualizar tendencias a través de gráficos interactivos.
+- Incluir funcionalidades de consulta avanzada para facilitar el análisis comparativo.
+- Garantizar la escalabilidad y seguridad del sistema mediante el uso de buenas prácticas de desarrollo y despliegue.
 
 <br>
 <br>
@@ -80,3 +89,50 @@ Este proyecto abarca:
 - **Desarrollo de una aplicación web:** Creación de una interfaz amigable y moderna para la visualización y gestión de datos energéticos.
 - **Visualización de datos energéticos históricos y en tiempo real:** Integración de gráficos interactivos y tablas que muestren tendencias y estadísticas relevantes.
 - **Implementación en producción:** La aplicación estará disponible en un entorno de producción, accesible para usuarios finales, cumpliendo con estándares de seguridad y diseño responsivo.
+
+
+<br>
+<br>
+<br>
+
+## 4. Desarrollo
+
+- Análisis de requerimientos:
+  - **Funcionales:** Registro y autenticación de usuarios, gráficos interactivos, filtros avanzados por región/tecnología/año, exportación de datos en formato .csv o .pdf.
+  - **No funcionales:** Escalabilidad, tiempos de respuesta menores a 2 segundos, cumplimiento de estándares de seguridad OWASP.
+- Arquitectura de software:
+  - **Backend:** Java - Spring Boot.
+  - **Frontend:** React.js o Angular.
+  - **Base de datos:** MySQL.
+  - **Despliegue:** Heroku, AWS o Azure.
+- Diagrama de casos de uso:
+  - Diagrama.
+- Diagrama de clases:
+  - Diagrama.
+- Desarrollo técnico:
+  - **Backend:**
+	  - Modelos de dominio siguiendo principios de POO.
+	  - Controladores RESTful para exponer servicios.
+  - **Frontend:**
+	  - Diseño responsivo con visualización gráfica (Chart.js o D3.js).
+  - **Integración:** APIs externas para datos actualizados del gobierno o proveedores.
+- Pruebas:
+  - Plan de pruebas unitarias, de integración y de interfaz de usuario.
+  - Herramientas: JUnit, Postman, Selenium.
+
+<br>
+<br>
+<br>
+
+## 5. Resultados esperados
+
+- **Prototipo funcional:**
+  - Plataforma operativa accesible vía navegador, con un diseño intuitivo y centrado en el usuario.
+- **Base de datos:**
+  - Almacenamiento eficiente de datos históricos y actualizados.
+- **Impacto social:**
+  - Usuarios informados sobre las tendencias energéticas en Colombia.
+- **Indicadores de éxito:**
+  - Tiempo de respuesta < 2 segundos para consultas grandes.
+  - Capacidad de la plataforma para manejar al menos 1.000 usuarios concurrentes.
+  - Visualización de datos energéticos para los últimos 10 años de al menos 10 fuentes renovables.
