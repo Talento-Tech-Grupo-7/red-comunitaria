@@ -46,6 +46,7 @@ La aplicación, a través de tecnologías modernas y una arquitectura orientada 
 <br>
 
 **Objetivo General**
+
 Desarrollar una aplicación web integral que permita la visualización y gestión de datos sobre la producción y el consumo de energía renovable a nivel global. La plataforma ayudará a los usuarios a comprender tendencias energéticas y tomar decisiones informadas que promuevan la transición hacia un sistema energético más sostenible.
 
 <br>
@@ -64,8 +65,7 @@ Desarrollar una aplicación web integral que permita la visualización y gestió
   - Obtener la producción total de energía renovable por tipo de fuente en un año específico y por región.
   - Calcular el porcentaje de energía renovable en el consumo eléctrico total por región.
   - Identificar tendencias de capacidad instalada de energía solar a lo largo de los años.
-  - Listar los 10 países con mayor producción de energía eólica en un año específico.
-  - Mostrar las fuentes de energía y su participación en el consumo eléctrico global.
+  - Mostrar las fuentes de energía y su participación en el consumo eléctrico.
 
 #### Nivel 3: Avanzados
 - **Visualización y experiencia del usuario:** Presentación de los resultados en formato tabular e interactivo, con gráficos que representen las consultas SQL de manera visual y comprensible.
