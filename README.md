@@ -8,7 +8,7 @@
 <br>
 
 #### Integrantes
-- [Santiago Barrera Vergara]()
+- [Santiago Barrera Vergara](https://github.com/tiagob961127)
 - [Carlos Martinez Morales]()
 - [Mayra Alejandra Marin López](https://github.com/malejamarin)
 - [Larry Alejandro Nuñez Gomez](https://github.com/elskull)
