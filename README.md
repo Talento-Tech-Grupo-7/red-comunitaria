@@ -106,7 +106,7 @@ Este proyecto abarca:
   - **Base de datos:** MySQL.
   - **Despliegue:** Heroku, AWS o Azure.
 - Diagrama de casos de uso:
-  - Diagrama.
+![Image PNG](resources/images/caso-uso.png)
 - Diagrama de clases:
   - Diagrama.
 - Desarrollo técnico:
