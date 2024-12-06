@@ -9,7 +9,7 @@
 
 #### Integrantes
 - [Santiago Barrera Vergara](https://github.com/tiagob961127)
-- [Carlos Martinez Morales]()
+- [Carlos Martinez Morales](https://github.com/carlos7144)
 - [Mayra Alejandra Marin López](https://github.com/malejamarin)
 - [Larry Alejandro Nuñez Gomez](https://github.com/elskull)
 - [Henry Alejandro Cáceres Téllez](https://github.com/tecnohalecatez)
@@ -108,7 +108,7 @@ Este proyecto abarca:
 - Diagrama de casos de uso:
 ![Image PNG](resources/images/caso-uso.png)
 - Diagrama de clases:
-  - Diagrama.
+![Image JPEG](resources/images/clase.jpeg)
 - Desarrollo técnico:
   - **Backend:**
 	  - Modelos de dominio siguiendo principios de POO.
