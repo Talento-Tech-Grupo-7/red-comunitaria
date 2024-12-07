@@ -87,7 +87,7 @@ INSERT INTO tipoEnergia (nombre, descripcion) VALUES
 ('Hidráulica', 'Energía obtenida a partir del agua en movimiento.'),
 ('Biomasa', 'Energía obtenida a partir de materia orgánica.'),
 ('Geotérmica', 'Energía obtenida a partir del calor interno de la Tierra.'),
-('Mareomotriz', 'Energía obtenida a partir de las mareas.'),
+('Mareomotriz', 'Energía obtenida a partir de las mareas.');
 
 INSERT INTO perfil (permisoId, nombre, descripcion) VALUES
 (1, 'Administrador General', 'Tiene acceso completo a todas las funcionalidades del sistema.'),
