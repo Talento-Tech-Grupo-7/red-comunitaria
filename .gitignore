@@ -9,21 +9,21 @@
 .DS_Store
 
 ### IntelliJ IDEA ###
-backend/TransicionEnergeticaJusta/.idea
-backend/TransicionEnergeticaJusta/*.iws
-backend/TransicionEnergeticaJusta/*.iml
-backend/TransicionEnergeticaJusta/*.ipr
-backend/TransicionEnergeticaJusta/.mvn
-backend/TransicionEnergeticaJusta/target
-backend/TransicionEnergeticaJusta/HELP.md
+/TransicionEnergeticaJusta/.idea
+/TransicionEnergeticaJusta/*.iws
+/TransicionEnergeticaJusta/*.iml
+/TransicionEnergeticaJusta/*.ipr
+/TransicionEnergeticaJusta/.mvn
+/TransicionEnergeticaJusta/target
+/TransicionEnergeticaJusta/HELP.md
 
 ### NetBeans ###
-backend/TransicionEnergeticaJusta/nbproject/private/
-backend/TransicionEnergeticaJusta/nbbuild/
-backend/TransicionEnergeticaJusta/dist/
-backend/TransicionEnergeticaJusta/nbdist/
-backend/TransicionEnergeticaJusta/.nb-gradle/
-backend/TransicionEnergeticaJusta/build/
+/TransicionEnergeticaJusta/nbproject/private/
+/TransicionEnergeticaJusta/nbbuild/
+/TransicionEnergeticaJusta/dist/
+/TransicionEnergeticaJusta/nbdist/
+/TransicionEnergeticaJusta/.nb-gradle/
+/TransicionEnergeticaJusta/build/
 
 ### VS Code ###
-backend/TransicionEnergeticaJusta/.vscode/
+/TransicionEnergeticaJusta/.vscode/
