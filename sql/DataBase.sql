@@ -79,7 +79,7 @@ INSERT INTO tipoEnergia (nombre, descripcion) VALUES
 ('Eólica', 'Energía obtenida a partir del viento.'),
 ('Hidráulica', 'Energía obtenida a partir del agua en movimiento.'),
 ('Biomasa', 'Energía obtenida a partir de materia orgánica.'),
-('Geotérmica', 'Energía obtenida a partir del calor interno de la Tierra.'),
+('Nuclear', 'Energía obtenida a partir del calor interno de la Tierra.'),
 ('Mareomotriz', 'Energía obtenida a partir de las mareas.');
 
 INSERT INTO perfil (permisoId, nombre, descripcion) VALUES
@@ -90,11 +90,11 @@ INSERT INTO perfil (permisoId, nombre, descripcion) VALUES
 (5, 'Invitado', 'Tiene acceso solo a la consulta de datos.');
 
 INSERT INTO usuario (perfilId, nombre, apellido, celular, email, contrasena) VALUES
-(1, 'Juan', 'Pérez', 3001234567, 'juan.perez@example.com', 'password123'),
-(2, 'María', 'Gómez', 3012345678, 'maria.gomez@example.com', 'password123'),
-(3, 'Carlos', 'Rodríguez', 3023456789, 'carlos.rodriguez@example.com', 'password123'),
-(4, 'Ana', 'Martínez', 3034567890, 'ana.martinez@example.com', 'password123'),
-(5, 'Luis', 'Fernández', 3045678901, 'luis.fernandez@example.com', 'password123');
+(1, 'Juan', 'Pérez', 3001234567, 'juan.perez@gmail.com', 'password123'),
+(2, 'María', 'Gómez', 3012345678, 'maria.gomez@gmail.com', 'password123'),
+(3, 'Carlos', 'Rodríguez', 3023456789, 'carlos.rodriguez@gmail.com', 'password123'),
+(4, 'Ana', 'Martínez', 3034567890, 'ana.martinez@gmail.com', 'password123'),
+(5, 'Luis', 'Fernández', 3045678901, 'luis.fernandez@gmail.com', 'password123');
 
 
 INSERT INTO energiaRenovable (tipoId, regionId, gestionUsuarioId, pais, anio, produccion, consumo) VALUES

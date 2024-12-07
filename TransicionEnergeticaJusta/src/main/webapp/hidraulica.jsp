@@ -6,7 +6,7 @@
 
     <head>
         <meta charset="utf-8" />
-        <title>EnergiaRenovable</title>
+        <title>Transicion Energetica Justa</title>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta content="Webflow" name="generator" />
         <link href="resources/css/content.css" rel="stylesheet" type="text/css" />
@@ -32,13 +32,18 @@
         </div>
         <section class="hero-heading-center">
             <div class="container-2">
-                <section class="section"><a href="#" class="button w-button">Energia Hidraulica</a><a href="#"
-                                                                                                      class="button w-button">Energia <br />Eolica</a><a href="#" class="button w-button">Energia<br />Solar</a><a
-                        href="#" class="button w-button">Energia Nuclear</a></section>
+                <section class="section">
+                    <a href="hidraulica.jsp" class="button w-button">Energia Hidraulica</a>
+                    <a href="eolica.jsp" class="button w-button">Energia <br> Eolica</a>
+                    <a href="solar.jsp" class="button w-button">Energia <br> Solar</a>
+                    <a href="nuclear.jsp" class="button w-button">Energia <br> Nuclear</a>
+                    <a href="biomasa.jsp" class="button w-button">Energia <br> Biomasa</a>
+                    <a href="mareomotriz.jsp" class="button w-button">Energia Mareomotriz</a>
+                </section>
                 <div class="w-layout-blockcontainer container-3 w-container">
                     <section class="hero-heading-center-2">
                         <div class="container-4">
-                            <div class="imagen1"><img src="resources/images/Logo.png" height="120" style="margin-left: 320px;" />
+                            <div class="imagen1"><img src="resources/images/Logo.png" height="120" style="margin-left: 300px;" />
                                 <h1 class="centered-heading margin-bottom-32px">Energia Hidraulica</h1>
                                 La energía hidráulica, también conocida como energía hidroeléctrica, es un tipo de energía renovable y limpia que se obtiene al transformar la energía potencial del agua en electricidad: 
                                 <h4>Cómo se genera</h4>
