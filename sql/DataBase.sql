@@ -59,13 +59,6 @@ CREATE TABLE IF NOT EXISTS energiaRenovable (
   FOREIGN KEY (gestionUsuarioId) REFERENCES usuario(id)
 );
 
-SHOW CREATE TABLE permiso;
-SHOW CREATE TABLE region;
-SHOW CREATE TABLE tipoEnergia;
-SHOW CREATE TABLE perfil;
-SHOW CREATE TABLE usuario;
-SHOW CREATE TABLE energiaRenovable;
-
 INSERT INTO region (nombre, descripcion) VALUES
 ('Andina', 'Región montañosa central de Colombia.'),
 ('Caribe', 'Región costera al norte de Colombia.'),
