@@ -11,13 +11,13 @@ DELETE FROM usuario WHERE id = ?;
 SELECT * FROM usuario;
 
 --- Insertar energia renovable
-INSERT INTO energia_renovable (tipoId, regionId, gestionUsuarioId, pais, anio, produccion, consumo) VALUES (?, ?, ?, ?, ?, ?, ?);
+INSERT INTO energiaRenovable (tipoId, regionId, gestionUsuarioId, pais, anio, produccion, consumo) VALUES (?, ?, ?, ?, ?, ?, ?);
 
 --- Actualizar energia renovable
-UPDATE energia_renovable SET tipoId = ?, regionId = ?, gestionUsuarioId = ?, pais = ?, anio = ?, produccion = ?, consumo = ? WHERE id = ?;
+UPDATE energiaRenovable SET tipoId = ?, regionId = ?, gestionUsuarioId = ?, pais = ?, anio = ?, produccion = ?, consumo = ? WHERE id = ?;
 
 --- Eliminar energia renovable
-DELETE FROM energia_renovable WHERE id = ?;
+DELETE FROM energiaRenovable WHERE id = ?;
 
 --- Consultar energias renovables
-SELECT * FROM energia_renovable;
+SELECT * FROM energiaRenovable;
