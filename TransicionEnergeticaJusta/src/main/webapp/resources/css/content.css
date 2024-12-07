@@ -2542,7 +2542,7 @@ textarea.w-input, textarea.w-select {
 
 .section {
   grid-column-gap: 45px;
-  grid-row-gap: 45px;
+  grid-row-gap: 30px;
   flex-flow: column;
   margin-top: 60px;
   display: flex;
@@ -2578,10 +2578,9 @@ textarea.w-input, textarea.w-select {
 
 .hero-heading-center-2 {
   background-color: #edf3eb;
-  border-bottom: 1px solid #edf3eb;
-  margin-left: 50px;
-  padding: 80px 30px;
-  position: relative;
+    border-bottom: 1px solid #e4ebf3;
+    padding: 30px 30px;
+    position: relative;
 }
 
 .container-4 {
@@ -2813,7 +2812,7 @@ textarea.w-input, textarea.w-select {
   }
 
   .hero-heading-left, .hero-heading-center, .hero-heading-center-2 {
-    padding: 60px 15px;
+    padding: 30px 15px;
   }
 }
 
