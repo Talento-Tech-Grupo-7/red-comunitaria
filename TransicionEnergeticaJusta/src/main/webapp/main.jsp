@@ -6,7 +6,7 @@
 
     <head>
         <meta charset="utf-8" />
-        <title>EnergiaRenovable</title>
+        <title>Transicion Energetica Justa</title>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta content="Webflow" name="generator" />
         <link href="resources/css/main.css" rel="stylesheet" type="text/css" />
@@ -20,8 +20,7 @@
                 <div class="navbar-wrapper">
                     <nav role="navigation" class="nav-menu-wrapper w-nav-menu">
                         <ul role="list" class="nav-menu-two w-list-unstyled">
-                            <li class="list-item"><a href="#" class="nav-link">Inicio</a></li>
-                            <li><a href="#" class="nav-link">Cerrar Sesión</a></li>
+                            <li><a href="index.jsp" class="nav-link">Cerrar Sesión</a></li>
                         </ul>
                     </nav>
                     <div class="menu-button w-nav-button">
@@ -32,9 +31,12 @@
         </div>
         <section class="hero-heading-center">
             <div class="container-2">
-                <section class="section"><a href="#" class="button w-button">Energia Hidraulica</a><a href="#"
-                                                                                                      class="button w-button">Energia <br />Eolica</a><a href="#" class="button w-button">Energia<br />Solar</a><a
-                        href="#" class="button w-button">Energia Nuclear</a></section>
+                <section class="section">
+                    <a href="hidraulica.jsp" class="button w-button">Energia Hidraulica</a>
+                    <a href="" class="button w-button">Energia <br>Eolica</a>
+                    <a href="#" class="button w-button">Energia<br>Solar</a>
+                    <a href="#" class="button w-button">Energia Nuclear</a>
+                </section>
                 <div class="container-4">
                     <div class="imagen1"><img src="resources/images/Logo.png" height="120" style="margin-left: 320px;" />
                         <h2 class="centered-heading margin-bottom-32px" >Energia Renovable</h2>
@@ -65,9 +67,10 @@
                                                 loading="lazy" alt="" /></a><a href="#" class="footer-social-link-three w-inline-block"><img
                                                 src="https://cdn.prod.website-files.com/62434fa732124a0fb112aab4/62434fa732124a717f12aaea_youtube%20small.svg"
                                                 loading="lazy" alt="" /></a></div>
-                                    <div class="footer-copyright">Transición Energética Justa. Todos los derechos reservados</div>
+                                    <div class="footer-copyright">© 2024 Transición Energética Justa. Todos los derechos reservados. "Construyendo un futuro más limpio y resiliente."</div>
                                 </div>
                             </div>
-                            </body>
+                        </section>
+                        </body>
 
-                            </html>
+                        </html>
