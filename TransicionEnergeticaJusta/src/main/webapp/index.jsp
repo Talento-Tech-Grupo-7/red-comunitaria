@@ -3,70 +3,62 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
+
     <head>
-        <title>Transicion Energetica Justa</title>
         <meta charset="utf-8" />
-        <link href="resources/css/login.css" rel="stylesheet" type="text/css" />
+        <title>Transicion Energetica Justa</title>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <link href="resources/css/index.css" rel="stylesheet" type="text/css" />
     </head>
-    <body>
-        <div class="login-page">
-            <div class="imagen1"><img src="resources/images/Logo.png" height="240"/>
+
+    <body class="body">
+        <div class="navbar-logo-left">
+            <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease"
+                 role="banner" class="navbar-logo-left-container shadow-three w-nav">
+                <div class="container"></div>
+                <div class="navbar-wrapper">
+                    <nav role="navigation" class="nav-menu-wrapper w-nav-menu">
+                        <ul role="list" class="nav-menu-two w-list-unstyled">
+                            <li><a href="login.jsp" class="nav-link">Iniciar sesion</a></li>
+                            <li><a href="signup.jsp" class="nav-link">Crear Cuenta</a></li>
+                        </ul>
+                    </nav>
+                    <div class="menu-button w-nav-button">
+                        <div class="w-icon-nav-menu"></div>
+                    </div>
+                </div>
             </div>
-            <div class="form" action="index.jsp" method="post">
-                <form class="login-form">
-                    <input type="text" name="email" placeholder="Email" />
-                    <input type="password" name="contrasena" placeholder="Contraseña" />
-                    <button type="submit">Ingresar</button>
-                    <p class="message">
-                        No estas registrado? <a href="signup.jsp">Crea tu cuenta</a>
-                    </p>
-                </form>
+        </div>
+        <br>
+        <br>
+        <section class="hero-heading-left">
+            <div class="container">
+                <div class="hero-wrapper">
+                    <div class="imagen1"><img src="resources/images/Logo.png" height="400" />
+                    </div>
+                    <div class="hero-split"><iframe width="695" height="391" src="https://www.youtube.com/embed/X8ApnOEw0R0" title="Energías renovables y el potencial que tiene Colombia | #PeriódicoUNAL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>		
+                </div>
             </div>
-        </div>        
-        <%
-            String email = request.getParameter("email");
-            String contrasena = request.getParameter("contrasena");
-
-            if (email != null && contrasena != null) {
-                String url = "jdbc:mysql://localhost:3306/transicionEnergetica";
-                String username = "root";
-                String password = "your_password";
-                Connection conn = null;
-                PreparedStatement pstmt = null;
-                ResultSet rs = null;
-
-                try {
-                    Class.forName("com.mysql.cj.jdbc.Driver");
-                    conn = DriverManager.getConnection(url, username, password);
-                    String sql = "SELECT * FROM usuario WHERE email = ? AND contrasena = ?";
-                    pstmt = conn.prepareStatement(sql);
-                    pstmt.setString(1, email);
-                    pstmt.setString(2, contrasena);
-                    rs = pstmt.executeQuery();
-
-                    if (rs.next()) {
-                        response.sendRedirect("main.jsp");
-                    } else {
-                        request.setAttribute("error", "Email o contraseña incorrectos.");
-                    }
-                } catch (Exception e) {
-                    e.printStackTrace();
-                    request.setAttribute("error", "Error: " + e.getMessage());
-                } finally {
-                    if (rs != null) try { rs.close(); } catch (SQLException e) { e.printStackTrace(); }
-                    if (pstmt != null) try { pstmt.close(); } catch (SQLException e) { e.printStackTrace(); }
-                    if (conn != null) try { conn.close(); } catch (SQLException e) { e.printStackTrace(); }
-                }
-            }
-            String errorMessage = (String) request.getAttribute("error");
-            if (errorMessage != null) {
-        %>
-        <script>
-        alert("<%= errorMessage %>");
-        </script>
-        <%
-            }
-        %>
+        </section>
+        <br>
+        <br>
+        <section class="footer-subscribe">
+            <div class="container">
+                <div class="footer-bottom">
+                    <div class="footer-social-block-three"><a href="#" class="footer-social-link-three w-inline-block"><img
+                                src="https://cdn.prod.website-files.com/62434fa732124a0fb112aab4/62434fa732124a705912aaeb_facebook%20big%20filled.svg"
+                                loading="lazy" alt="" /></a><a href="#" class="footer-social-link-three w-inline-block"><img
+                                src="https://cdn.prod.website-files.com/62434fa732124a0fb112aab4/62434fa732124ab37a12aaf0_twitter%20big.svg"
+                                loading="lazy" alt="" /></a><a href="#" class="footer-social-link-three w-inline-block"><img
+                                src="https://cdn.prod.website-files.com/62434fa732124a0fb112aab4/62434fa732124a61f512aaed_instagram%20big.svg"
+                                loading="lazy" alt="" /></a><a href="#" class="footer-social-link-three w-inline-block"><img
+                                src="https://cdn.prod.website-files.com/62434fa732124a0fb112aab4/62434fa732124a717f12aaea_youtube%20small.svg"
+                                loading="lazy" alt="" /></a></div>
+                    <div class="footer-copyright">© 2024 Transición Energética Justa. Todos los derechos reservados. "Construyendo un futuro más limpio y resiliente."</div>
+                </div>
+            </div>
+        </section>
     </body>
-</html>
 
+</html>
