@@ -256,3 +256,10 @@ INSERT INTO energiaRenovable (tipoId, regionId, gestionUsuarioId, pais, anio, pr
 (6, 6, 1, 'Colombia', 2022, 600.00, 500.00),
 (6, 6, 1, 'Colombia', 2023, 700.00, 600.00),
 (6, 6, 1, 'Colombia', 2024, 800.00, 700.00);
+
+
+select * from usuario;
+
+select * from usuario;
+
+delete from usuario where nombre ='Henry';
