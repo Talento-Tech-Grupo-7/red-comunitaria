@@ -20,7 +20,7 @@
                     <input type="text" name="email" placeholder="Email" />
                     <input type="password" name="contrasena" placeholder="Contraseña" />          
                     <button type="submit">Crear</button>
-                    <p class="message">Ya estas registrado? <a href="index.jsp">Iniciar sesión</a></p>
+                    <p class="message">Ya estas registrado? <a href="login.jsp">Iniciar sesión</a></p>
                 </form>
             </div>
         </div>
@@ -52,9 +52,9 @@
                   int rows = pstmt.executeUpdate();
 
                   if (rows > 0) {
-                      out.println("Registro exitoso!");
+                  request.setAttribute("action", "Registro exitoso! Iniciar sesión ");
                   } else {
-                      out.println("Error al registrar el usuario.");
+                  request.setAttribute("action", "Error al registrar el usuario.");
                   }
               } catch (Exception e) {
                   e.printStackTrace();
@@ -64,6 +64,14 @@
                   if (conn != null) try { conn.close(); } catch (SQLException e) { e.printStackTrace(); }
               }
           }
+          String actionMessage = (String) request.getAttribute("action");
+            if (actionMessage != null) {
+        %>
+        <script>
+            alert("<%= actionMessage %>");
+        </script>
+        <%
+            }
         %>
     </body>
 </html>
