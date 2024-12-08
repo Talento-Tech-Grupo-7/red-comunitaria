@@ -34,11 +34,12 @@
         </div>
         <section class="hero-heading-center content-container">
             <div class="graficos">
-                <div class="grafico1"><img src="Logo.png" alt="Logo 1"></div>
-                <div class="grafico2"><img src="Logo.png" alt="Logo 2"></div>
-            </div>
-            <div class="tabla">
-                <div class="tabla-contenedor">
+                <div class="grafico1"><img src="graficoBarrasDB" alt="Gráfico de Barras" /></div>
+                <div class="grafico2"><img src="graficoCircularDB" alt="Gráfico Circular" /></div>
+            </div>            
+            <h3 style="text-align: center">Datos de energía renovable en Colombia</h3>
+            <div class="tabla">                
+                <div class="tabla-contenedor">                    
                     <%
         String url = "jdbc:mysql://localhost:3306/transicionEnergetica";
         String user = "root";
@@ -100,7 +101,7 @@
 
     %>
 
-    <div>
+    <div class="tabla-profesional">
         <a href="?pagina=<%= paginaAnterior %>">Anterior</a> |
         <a href="?pagina=<%= paginaSiguiente %>">Siguiente</a>
     </div>
