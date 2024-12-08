@@ -39,58 +39,71 @@
             </div>
             <div class="tabla">
                 <div class="tabla-contenedor">
-                    <table class="tabla-profesional">
-                        <thead>
-                            <tr>
-                                <th>Tipo de Energía</th>
-                                <th>Región</th>
-                                <th>País</th>
-                                <th>Año</th>
-                                <th>Producción</th>
-                                <th>Consumo</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <%
-                                String url = "jdbc:mysql://localhost:3306/transicionEnergetica";
-                                String username = "root";
-                                String password = "your_password";
-                                Connection conn = null;
-                                Statement stmt = null;
-                                ResultSet rs = null;
+                    <%
+        String url = "jdbc:mysql://localhost:3306/transicionEnergetica";
+        String user = "root";
+        String password = "your_password";
+        int registrosPorPagina = 10;
+        int paginaActual = 1;
+        String paginaParam = request.getParameter("pagina");
+        if (paginaParam != null) {
+            try {
+                paginaActual = Integer.parseInt(paginaParam);
+            } catch (NumberFormatException e) {
+                paginaActual = 1;
+            }
+        }
+        int offset = (paginaActual - 1) * registrosPorPagina;
+        String query = "SELECT te.nombre tipo, r.nombre region, er.pais, er.anio, er.produccion, er.consumo FROM energiaRenovable er"
+                + " LEFT JOIN tipoEnergia te ON er.tipoId = te.id"
+                + " LEFT JOIN region r ON er.regionId = r.id LIMIT ? OFFSET ?";
 
-                                try {
-                                    Class.forName("com.mysql.cj.jdbc.Driver");
-                                    conn = DriverManager.getConnection(url, username, password);
-                                    String sql = "SELECT te.nombre tipo, r.nombre region, er.pais, er.anio, er.produccion, er.consumo FROM energiaRenovable er"
-                                    + " LEFT JOIN tipoEnergia te ON er.tipoId = te.id"
-                                    + " LEFT JOIN region r ON er.regionId = r.id;";
-                                    stmt = conn.createStatement();
-                                    rs = stmt.executeQuery(sql);
+        Connection conn = null;
+        PreparedStatement stmt = null;
+        ResultSet rs = null;
 
-                                    while (rs.next()){
-                            %>
-                            <tr>
-                                <td><%= rs.getString("tipo") %></td>
-                                <td><%= rs.getString("region") %></td>
-                                <td><%= rs.getString("pais") %></td>
-                                <td><%= rs.getInt("anio") %></td>
-                                <td><%= rs.getFloat("produccion") %></td>
-                                <td><%= rs.getFloat("consumo") %></td>
-                            </tr>
-                            <%
-                                    }
-                                } catch (Exception e) {
-                                e.printStackTrace();
-                                out.println("Error: " + e.getMessage());
-                                } finally {
-                                if (stmt != null) try { stmt.close(); } catch (SQLException e) { e.printStackTrace(); }
-                                if (conn != null) try { conn.close(); } catch (SQLException e) { e.printStackTrace(); }
-                                if (rs != null) try { rs.close(); } catch (SQLException e) { e.printStackTrace(); }
-                                }
-                            %>
-                        </tbody>
-                    </table>
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            conn = DriverManager.getConnection(url, user, password);
+            stmt = conn.prepareStatement(query);
+            stmt.setInt(1, registrosPorPagina);
+            stmt.setInt(2, offset);
+            rs = stmt.executeQuery();
+            out.println("<table class='tabla-profesional'");
+            out.println("<thead>"
+            + "<tr>"
+            + "<th>Tipo de Energía</th><th>Región</th><th>País</th><th>Año</th><th>Producción</th><th>Consumo</th>"
+            + "</tr>"
+            + "</thead>"
+            + "<tbody>");
+            while (rs.next()) {
+                out.println("<tr>");
+                out.println("<td>" + rs.getString("tipo") + "</td>");
+                out.println("<td>" + rs.getString("region") + "</td>");
+                out.println("<td>" + rs.getString("pais") + "</td>");
+                out.println("<td>" + rs.getInt("anio") + "</td>");
+                out.println("<td>" + rs.getFloat("produccion") + "</td>");
+                out.println("<td>" + rs.getFloat("consumo") + "</td>");
+                out.println("</tr>");
+            }
+            out.println("</tbody></table>");
+        } catch (Exception e) {
+            out.println("<p>Error al cargar los datos: " + e.getMessage() + "</p>");
+        } finally {
+            if (rs != null) try { rs.close(); } catch (SQLException ignored) {}
+            if (stmt != null) try { stmt.close(); } catch (SQLException ignored) {}
+            if (conn != null) try { conn.close(); } catch (SQLException ignored) {}
+        }
+
+        int paginaAnterior = paginaActual > 1 ? paginaActual - 1 : 1;
+        int paginaSiguiente = paginaActual + 1;
+
+    %>
+
+    <div>
+        <a href="?pagina=<%= paginaAnterior %>">Anterior</a> |
+        <a href="?pagina=<%= paginaSiguiente %>">Siguiente</a>
+    </div>
                 </div>
 
             </div>

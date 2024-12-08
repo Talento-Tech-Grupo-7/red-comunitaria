@@ -2894,7 +2894,7 @@ textarea.w-input, textarea.w-select {
 /* Tabla */
 .tabla {
   width: 100%; /* Ocupa todo el ancho */
-  height: 800px; /* Altura de ejemplo */
+  height: 500px; /* Altura de ejemplo */
   background-color: #e0e0e0;
   text-align: center;
   padding: 20px;
